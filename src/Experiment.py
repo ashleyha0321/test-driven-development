@@ -52,8 +52,11 @@ class Experiment:
          plt.legend()
          plt.grid()
 
-         if show_plot == True:
+         if show_plot:
              plt.show()
+
+
+
 
 
 
