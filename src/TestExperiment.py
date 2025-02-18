@@ -2,6 +2,8 @@ import unittest
 from Experiment import Experiment
 from SignalDetection import SignalDetection
 
+# class was constructed with the assistance of chatGPT
+
 class TestExperiment(unittest.TestCase):
    
     def test_add_condition(self):
@@ -52,7 +54,7 @@ class TestExperiment(unittest.TestCase):
         auc = exp.compute_auc()
 
         self.assertAlmostEqual(auc, 1.0, places=3)  
-        
+
     # test AUC with no conditions
     def test_compute_auc_no_cond(self):
         exp = Experiment()
